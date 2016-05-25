@@ -13,6 +13,15 @@ public class DamageType : MonoBehaviour {
         electric,
         ice
     }
+
+    public enum e_armorType
+    {
+        carbon,
+        steel,
+        plasticium,
+        elementalium
+    }
+
     
 
 }

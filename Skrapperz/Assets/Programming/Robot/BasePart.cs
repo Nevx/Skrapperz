@@ -6,6 +6,9 @@ public class BasePart : MonoBehaviour {
     protected int m_health;
 
     [SerializeField]
-    protected DamageType damageType;
+    protected DamageType.e_armorType Armor;
+
+    [SerializeField]
+    protected int power;
 
 }

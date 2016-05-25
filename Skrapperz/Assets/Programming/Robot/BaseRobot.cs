@@ -3,22 +3,22 @@ using System.Collections;
 
 public class BaseRobot : MonoBehaviour {
     [SerializeField]
-    private PartArm armRight;
+    private BasePart armRight;
 
     [SerializeField]
-    private PartArm armLeft;
+    private BasePart armLeft;
 
     [SerializeField]
-    private PartTorso torso;
+    private BasePart torso;
 
     [SerializeField]
-    private PartHead head;
+    private BasePart head;
 
     [SerializeField]
-    private PartLegs legs;
+    private BasePart legs;
 
     [SerializeField]
-    private PartShoulder shoulder;
+    private BasePart shoulder;
 
 
 }
