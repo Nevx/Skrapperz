@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class deleteMe : MonoBehaviour {
+public class deleteMePrefabs : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
