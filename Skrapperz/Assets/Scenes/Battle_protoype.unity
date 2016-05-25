@@ -343,7 +343,7 @@ RectTransform:
   m_GameObject: {fileID: 307208460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.880865, y: 0.8808646, z: 0.8808646}
+  m_LocalScale: {x: 0.94207, y: 0.94207203, z: 0.94207203}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1908994178}
@@ -355,7 +355,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -402.8, y: 233.3}
+  m_AnchoredPosition: {x: -268, y: 241}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &308005655
@@ -1055,7 +1055,7 @@ MonoBehaviour:
   - attack_name: Bash
     damage: 25
   - attack_name: Slash
-    damage: 50
+    damage: 10
   actionButtons:
   - {fileID: 943316448}
   - {fileID: 1095177508}
@@ -1091,7 +1091,7 @@ Transform:
   - {fileID: 1160410856}
   - {fileID: 1173934760}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1 &872896520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1407,7 @@ Transform:
   m_Children:
   - {fileID: 763943727}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1095177506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,7 +1523,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &1160410855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,7 +2746,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107.1, y: -113.5}
+  m_AnchoredPosition: {x: -107.1, y: -110}
   m_SizeDelta: {x: 242.7, y: 26.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2096531331
