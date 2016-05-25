@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PartHead : MonoBehaviour {
+public class PartHead : BasePart {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    [SerializeField]
+    private int baseAccuracy;
+
+    [SerializeField]
+    private int baseCrit;
+
 }

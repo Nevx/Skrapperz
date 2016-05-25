@@ -14,5 +14,8 @@ public class PartArm : BasePart {
 
     [SerializeField]
     private int cooldown;
+
+    [SerializeField]
+    private int crit;
     
 }

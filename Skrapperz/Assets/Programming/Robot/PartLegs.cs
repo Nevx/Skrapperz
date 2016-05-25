@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PartLegs : MonoBehaviour {
+public class PartLegs : BasePart {
 
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    private int dodge;
+
+    [SerializeField]
+    private int tackleAccuracy;
+
+    [SerializeField]
+    private int tackleDamage;
 	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
