@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &126978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 434174}
+  - 114: {fileID: 11483230}
+  m_Layer: 0
+  m_Name: Thor-bot 0.1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434174
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.0208375, y: 0.38501638, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11483230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e744445e899eea640b8aeb715f000834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armRight: {fileID: 11430322, guid: 3480ce94f3bd01444ab311cfe0bb3ef9, type: 2}
+  armLeft: {fileID: 11430322, guid: 3480ce94f3bd01444ab311cfe0bb3ef9, type: 2}
+  torso: {fileID: 11486630, guid: da6f433fac6c8224d9a670d1bc1631a7, type: 2}
+  head: {fileID: 11429296, guid: d67bf9b29bdc7754bbfb3cb382d90af9, type: 2}
+  legs: {fileID: 11485112, guid: 59a25b083d3580c4f8da1a702a342604, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 126978}
+  m_IsPrefabParent: 1
