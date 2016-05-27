@@ -4,13 +4,7 @@ using System.Collections;
 public class BasePart : MonoBehaviour {
 
     [SerializeField]
-    public DamageType.e_armorType armor
-    {
-        get
-        {
-            return armor;
-        }
-    }
+    public DamageType.e_armorType armor;
 
     [SerializeField]
     protected int power;
