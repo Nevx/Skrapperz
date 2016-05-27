@@ -7,7 +7,7 @@ public class PartArm : BasePart {
     public DamageType.e_damageType damageType;
 
     [SerializeField]
-    public int damage;
+    public int  damage;
 
     [SerializeField]
     public int accuracy;

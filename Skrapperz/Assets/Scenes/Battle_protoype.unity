@@ -85,6 +85,75 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &2218794
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.0208375
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.38501638
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 434174, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &2218795 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 126978, guid: 874108df0ada6464c93b9a8b79ddde37, type: 2}
+  m_PrefabInternal: {fileID: 2218794}
+--- !u!114 &2218796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2218795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armor: 0
+  power: 0
+  flavourText: 
+  m_health: 100
+  healthbar: {fileID: 0}
+  target: {fileID: 0}
+  partName: 
+  targetSelf: {fileID: 0}
+  gameManager: {fileID: 0}
+  feedbackText: {fileID: 0}
+  abilitie: []
+  actionButtons: []
 --- !u!1 &98661176
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -739,6 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -791,8 +862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
-  flavourText: 
+  flavourText: a weapon of mass construction.
   m_health: 11
   healthbar: {fileID: 0}
   target: {fileID: 0}
@@ -801,6 +873,11 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   feedbackText: {fileID: 0}
   abilitie: []
+  damageType: 0
+  damage: 0
+  accuracy: 0
+  cooldown: 0
+  crit: 0
   weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
 --- !u!1 &414699510
 GameObject:
@@ -1190,57 +1267,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557205289}
---- !u!1 &644314768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 644314770}
-  - 114: {fileID: 644314769}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &644314769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 644314768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  power: 0
-  flavourText: 
-  m_health: 100
-  healthbar: {fileID: 0}
-  target: {fileID: 0}
-  partName: 
-  targetSelf: {fileID: 0}
-  gameManager: {fileID: 0}
-  feedbackText: {fileID: 0}
-  abilitie: []
-  weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
---- !u!4 &644314770
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 644314768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3529889, y: -0.5118193, z: 90}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
 --- !u!1 &662487411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -1961,6 +1988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2459,6 +2487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2541,6 +2570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2710,6 +2740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2771,6 +2802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -3502,6 +3534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -3841,6 +3874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  armor: 0
   power: 0
   flavourText: 
   m_health: 100
