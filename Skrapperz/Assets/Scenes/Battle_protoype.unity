@@ -656,7 +656,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -708,6 +707,7 @@ GameObject:
   - 4: {fileID: 363855155}
   - 212: {fileID: 363855157}
   - 114: {fileID: 363855156}
+  - 114: {fileID: 363855158}
   m_Layer: 0
   m_Name: player_arm1
   m_TagString: Untagged
@@ -739,7 +739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -781,6 +780,28 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &363855158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 363855154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 0
+  flavourText: 
+  m_health: 11
+  healthbar: {fileID: 0}
+  target: {fileID: 0}
+  partName: 
+  targetSelf: {fileID: 0}
+  gameManager: {fileID: 0}
+  feedbackText: {fileID: 0}
+  abilitie: []
+  weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
 --- !u!1 &414699510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1190,57 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 557205289}
+--- !u!1 &644314768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 644314770}
+  - 114: {fileID: 644314769}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &644314769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644314768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 0
+  flavourText: 
+  m_health: 100
+  healthbar: {fileID: 0}
+  target: {fileID: 0}
+  partName: 
+  targetSelf: {fileID: 0}
+  gameManager: {fileID: 0}
+  feedbackText: {fileID: 0}
+  abilitie: []
+  weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
+--- !u!4 &644314770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 644314768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3529889, y: -0.5118193, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &662487411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -1890,7 +1961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2389,7 +2459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2472,7 +2541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2642,7 +2710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -2704,7 +2771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -3436,7 +3502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100
@@ -3776,7 +3841,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Armor: 0
   power: 0
   flavourText: 
   m_health: 100

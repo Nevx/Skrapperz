@@ -60,7 +60,11 @@ public class BasePart : MonoBehaviour {
 
     public void RecieveDamage(int damage)
     {
+        
         feedbackText.text = partName + " took " + damage + " dmg";
+
+
+        
         m_health -= damage;
     }
 
