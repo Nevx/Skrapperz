@@ -7,7 +7,13 @@ public class PartHead : BasePart {
     private int baseAccuracy;
 
     [SerializeField]
-    private int baseCrit;
+    public int baseCrit
+    {
+        get
+        {
+            return baseCrit;
+        }
+    }
 
     [SerializeField]
     private Sprite headIcon;
