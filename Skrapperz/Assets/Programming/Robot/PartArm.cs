@@ -4,50 +4,20 @@ using System.Collections;
 public class PartArm : BasePart {
 
     [SerializeField]
-    public DamageType.e_damageType damageType
-    {
-        get
-        {
-            return damageType;
-        }
-    }
+    public DamageType.e_damageType damageType;
 
     [SerializeField]
-    public int damage
-    {
-        get
-        {
-            return damage;
-        }
-    }
+    public int damage;
 
     [SerializeField]
-    public int accuracy
-    {
-        get
-        {
-            return accuracy;
-        }
-    }
+    public int accuracy;
 
     [SerializeField]
-    public int cooldown
-    {
-        get
-        {
-            return cooldown;
-        }
-    }
+    public int cooldown;
 
     [SerializeField]
-    public int crit
-    {
-        get
-        {
-            return crit;
-        }
-    }
-
+    public int crit;
+    
     [SerializeField]
     private Sprite weaponIcon;
 }
