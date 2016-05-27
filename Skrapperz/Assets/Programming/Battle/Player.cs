@@ -14,11 +14,13 @@ public class Player : BasePart
         }
 
     }
+    //This function changes the target for the player's attack.
     public void Target(BasePart attackTarget)
     {
         target = attackTarget;
     }
 
+    //Perform an attack with X damage, then your turn is over.
     public void PerformAttack(int attackNumber)
     {
         target.RecieveDamage(abilitie[attackNumber].damage);
@@ -26,11 +28,13 @@ public class Player : BasePart
 
     }
 
+    //Changes repair target.
     public void RepairPart(Player repairTarget)
     {
         targetSelf = repairTarget;
 
     }
+    //Repairs 25 health to damaged part, then your turn is over.
     public void Repair()
     {
         targetSelf.RecieveHealth(25);

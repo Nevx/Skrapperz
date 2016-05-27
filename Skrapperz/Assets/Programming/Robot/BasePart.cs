@@ -23,6 +23,9 @@ public class BasePart : MonoBehaviour {
     public BasePart target;
 
     [SerializeField]
+    public string partName;
+
+    [SerializeField]
     public BasePart targetSelf;
 
     [SerializeField]
@@ -51,13 +54,13 @@ public class BasePart : MonoBehaviour {
 
     public void RecieveDamage(int damage)
     {
-        //feedbackText.text += "\n The target took " + damage + " dmg";
+        feedbackText.text = partName + " took " + damage + " dmg";
         m_health -= damage;
     }
 
     public void RecieveHealth(int hp)
     {
-
+        feedbackText.text = partName + " repaired for " + hp + " hp";
         if (m_health < 100)
         {
             m_health += hp;
