@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: 589dc49735d680449aecbdaa828e3078
-timeCreated: 1464269637
+timeCreated: 1464341614
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - legsIcon: {fileID: 21300000, guid: 8abd78d0aa744ca42a9d8ee1000ed9da, type: 3}
+  - legsIcon: {fileID: 21300000, guid: 58814faac5cd20345adcf225c2917164, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

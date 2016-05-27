@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: 59520f1a71df0ba4c9f29d0b75662e93
-timeCreated: 1464269314
+timeCreated: 1464341601
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - weaponIcon: {fileID: 21300000, guid: 96f4ba59af9990a4a83dccb89eda2a88, type: 3}
+  - weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
