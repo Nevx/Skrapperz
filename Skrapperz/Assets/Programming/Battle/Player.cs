@@ -25,6 +25,17 @@ public class Player : BasePart
         gameManager.AttackDone();
 
     }
-  
+
+    public void RepairPart(Player repairTarget)
+    {
+        targetSelf = repairTarget;
+
+    }
+    public void Repair()
+    {
+        targetSelf.RecieveHealth(25);
+        gameManager.AttackDone();
+    }
+
 
 }
