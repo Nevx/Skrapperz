@@ -9,4 +9,6 @@ public class PartHead : BasePart {
     [SerializeField]
     private int baseCrit;
 
+    [SerializeField]
+    private Sprite headIcon;
 }

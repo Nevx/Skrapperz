@@ -11,5 +11,7 @@ public class PartLegs : BasePart {
 
     [SerializeField]
     private int tackleDamage;
-	
+
+    [SerializeField]
+    private Sprite legsIcon;
 }

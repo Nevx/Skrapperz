@@ -17,5 +17,7 @@ public class PartArm : BasePart {
 
     [SerializeField]
     private int crit;
-    
+
+    [SerializeField]
+    private Sprite weaponIcon;
 }

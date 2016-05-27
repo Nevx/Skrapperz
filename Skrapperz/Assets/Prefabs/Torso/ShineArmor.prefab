@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_health: 40
-  Armor: 0
+  Armor: 2
   power: 8
 --- !u!1001 &100100000
 Prefab:

@@ -11,4 +11,6 @@ public class BasePart : MonoBehaviour {
     [SerializeField]
     protected int power;
 
+    [SerializeField]
+    protected string flavourText;
 }

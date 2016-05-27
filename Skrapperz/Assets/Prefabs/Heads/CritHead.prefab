@@ -45,6 +45,7 @@ MonoBehaviour:
   power: 1
   baseAccuracy: 40
   baseCrit: 45
+  headIcon: {fileID: 21300000, guid: 905fd368b03b97b4c8215fede836542c, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
