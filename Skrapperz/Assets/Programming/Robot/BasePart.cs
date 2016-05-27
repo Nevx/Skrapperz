@@ -23,6 +23,9 @@ public class BasePart : MonoBehaviour {
     public BasePart target;
 
     [SerializeField]
+    public BasePart targetSelf;
+
+    [SerializeField]
     protected GameManager gameManager;
 
     [System.Serializable]
@@ -39,13 +42,26 @@ public class BasePart : MonoBehaviour {
     void Update()
     {
         healthbar.sizeDelta = new Vector2(m_health * 0.4f, 40f);
+
+        if (m_health > 100)
+        {
+            m_health = 100;
+        }
     }
 
     public void RecieveDamage(int damage)
     {
         //feedbackText.text += "\n The target took " + damage + " dmg";
-
         m_health -= damage;
+    }
+
+    public void RecieveHealth(int hp)
+    {
+
+        if (m_health < 100)
+        {
+            m_health += hp;
+        }
 
     }
 
