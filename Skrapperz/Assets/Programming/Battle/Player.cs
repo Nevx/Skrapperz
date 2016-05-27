@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : BaseUnit
+public class Player : BasePart
 {
     [SerializeField]
     UnityEngine.UI.Text[] actionButtons;
@@ -14,7 +14,7 @@ public class Player : BaseUnit
         }
 
     }
-    public void Target(BaseUnit attackTarget)
+    public void Target(BasePart attackTarget)
     {
         target = attackTarget;
     }
