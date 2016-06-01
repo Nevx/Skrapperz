@@ -1,28 +1,45 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour
+public class Inventory : MonoBehaviour, IHasChanged
 {
+    [SerializeField]
+    Transform slots;
 
-    GameObject inventoryPanel;
-    GameObject slotPanel;
-    public GameObject inventorySlot;
-    public GameObject inventoryItem;
+    [SerializeField]
+    Text inventoryText;
 
-    int slotAmount;
-    public List<Item> Items = new List<Item>();
-    public List<GameObject> slots = new List<GameObject>();
 
-    void Start()
+    // Use this for initialization
+    void Start ()
     {
-        slotAmount = 20;
-        inventoryPanel = GameObject.Find("Inventory Panel");
-        slotPanel = inventoryPanel.transform.FindChild("Slot Panel").gameObject;
-        for(int i = 0; i < slotAmount; i++)
+        HasChanged();
+	}
+
+	public void HasChanged ()
+    {
+        System.Text.StringBuilder builder = new System.Text.StringBuilder();
+        builder.Append(" - ");
+        foreach (Transform slotTransform in slots)
         {
-            slots.Add(Instantiate(inventorySlot));
-            slots[i].transform.SetParent(slotPanel.transform);
+            GameObject item = slotTransform.GetComponent<Slot>().item;
+            if (item)
+            {
+                builder.Append(item.name);
+                builder.Append(" - ");
+            }
         }
+        inventoryText.text = builder.ToString();
+    }
+
+}
+
+namespace UnityEngine.EventSystems
+{
+    public interface IHasChanged : IEventSystemHandler
+    {
+        void HasChanged();
     }
 }
