@@ -1,5 +1,37 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &117128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 434322}
+  - 114: {fileID: 11408652}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &117228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440000}
+  - 114: {fileID: 11473384}
+  m_Layer: 0
+  m_Name: Legs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &126978
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,6 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 434174}
   - 114: {fileID: 11483230}
+  - 114: {fileID: 11463102}
   m_Layer: 0
   m_Name: Thor-bot 0.1
   m_TagString: Untagged
@@ -16,6 +49,67 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &137828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 433014}
+  - 114: {fileID: 11412822}
+  m_Layer: 0
+  m_Name: ArmRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &195760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 473568}
+  - 114: {fileID: 11427728}
+  m_Layer: 0
+  m_Name: ArmLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &197862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441660}
+  - 114: {fileID: 11406154}
+  m_Layer: 0
+  m_Name: Torso
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 434174}
+  m_RootOrder: 3
 --- !u!4 &434174
 Transform:
   m_ObjectHideFlags: 1
@@ -26,9 +120,177 @@ Transform:
   m_LocalPosition: {x: 3.0208375, y: 0.38501638, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 434322}
+  - {fileID: 441660}
+  - {fileID: 473568}
+  - {fileID: 433014}
+  - {fileID: 440000}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &434322
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 434174}
+  m_RootOrder: 0
+--- !u!4 &440000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 434174}
+  m_RootOrder: 4
+--- !u!4 &441660
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 434174}
+  m_RootOrder: 1
+--- !u!4 &473568
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 434174}
+  m_RootOrder: 2
+--- !u!114 &11406154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee6b43176135c54aa3176afe12c46f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armor: 0
+  power: 0
+  flavourText: 
+  m_health: 0
+  healthbar: {fileID: 0}
+  torsoIcon: {fileID: 21300000, guid: b3aa83c68c7cd9f4a905c323e512b910, type: 3}
+--- !u!114 &11408652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df90fee9523220446a0520a665008def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armor: 0
+  power: 0
+  flavourText: 
+  m_health: 0
+  healthbar: {fileID: 0}
+  baseAccuracy: 0
+  baseCrit: 0
+  headIcon: {fileID: 21300000, guid: 1710ab947c6bc4747a6b39db40147c5d, type: 3}
+--- !u!114 &11412822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armor: 0
+  power: 0
+  flavourText: 
+  m_health: 0
+  healthbar: {fileID: 0}
+  damageType: 0
+  damage: 0
+  accuracy: 0
+  cooldown: 0
+  crit: 0
+  weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
+--- !u!114 &11427728
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armor: 0
+  power: 0
+  flavourText: 
+  m_health: 0
+  healthbar: {fileID: 0}
+  damageType: 0
+  damage: 0
+  accuracy: 0
+  cooldown: 0
+  crit: 0
+  weaponIcon: {fileID: 21300000, guid: 20142a2ea34025648bb9e50d1bfdf166, type: 3}
+--- !u!114 &11463102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11473384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589dc49735d680449aecbdaa828e3078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armor: 0
+  power: 0
+  flavourText: 
+  m_health: 0
+  healthbar: {fileID: 0}
+  dodge: 0
+  tackleAccuracy: 0
+  tackleDamage: 0
+  legsIcon: {fileID: 21300000, guid: 58814faac5cd20345adcf225c2917164, type: 3}
 --- !u!114 &11483230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40,11 +302,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e744445e899eea640b8aeb715f000834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armRight: {fileID: 11430322, guid: 3480ce94f3bd01444ab311cfe0bb3ef9, type: 2}
-  armLeft: {fileID: 11430322, guid: 3480ce94f3bd01444ab311cfe0bb3ef9, type: 2}
-  torso: {fileID: 11486630, guid: da6f433fac6c8224d9a670d1bc1631a7, type: 2}
-  head: {fileID: 11429296, guid: d67bf9b29bdc7754bbfb3cb382d90af9, type: 2}
-  legs: {fileID: 11485112, guid: 59a25b083d3580c4f8da1a702a342604, type: 2}
+  armRight: {fileID: 11412822}
+  armLeft: {fileID: 11427728}
+  torso: {fileID: 11406154}
+  head: {fileID: 11408652}
+  legs: {fileID: 11473384}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

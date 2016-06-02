@@ -1,18 +1,62 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy : BasePart
+public class Enemy : MonoBehaviour
 {
+    
+    private Player player;
+    private BaseRobot playerRobot;
+    private BasePart[] playerParts;
+    private BasePart target;
 
-    [SerializeField]
-    private Player[] playerParts;
+    
+    public PartArm enemyWeapon;
+    public PartHead enemyHead;
+
+    public BaseRobot robot;
+
+    public PartHead headInstance;
+    public PartTorso torsoInstance;
+    public PartArm armRightInstance;
+    public PartArm armLeftInstance;
+    public PartLegs legsInstance;
+
+    void Awake()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerRobot = player.robot;
+        robot = GetComponentInParent<BaseRobot>();
+
+        headInstance = Instantiate(robot.head);
+        headInstance.transform.SetParent(gameObject.transform);
+        armRightInstance = Instantiate(robot.armRight);
+        armRightInstance.transform.SetParent(gameObject.transform);
+        armLeftInstance = Instantiate(robot.armLeft);
+        armLeftInstance.transform.SetParent(gameObject.transform);
+        torsoInstance = Instantiate(robot.torso);
+        torsoInstance.transform.SetParent(gameObject.transform);
+        legsInstance = Instantiate(robot.legs);
+        legsInstance.transform.SetParent(gameObject.transform);
+
+        enemyWeapon = robot.armRight;
+        enemyHead = robot.head;
+    }
 
     public void DoAttack()
     {
+        playerParts = new BasePart[5];
+        playerParts[0] = player.headInstance;
+        playerParts[1] = player.torsoInstance;
+        playerParts[2] = player.armLeftInstance;
+        playerParts[3] = player.armRightInstance;
+        playerParts[4] = player.legsInstance;
+
+
         //Enemy chooses a target randomly from the list of parts.
         target = playerParts[Random.Range(0, playerParts.Length)];
-        target.RecieveDamage(abilitie[Random.Range(0, abilitie.Length)].damage);
+        target.m_health -= DamageCalculation.Calculate(enemyWeapon, enemyHead, target);
 
+        Debug.Log("You took damage to " + target + ". You now have: " + target.m_health);
     }
 
 }
