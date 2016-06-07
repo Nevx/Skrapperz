@@ -8,8 +8,9 @@ public class Enemy : MonoBehaviour
     private BaseRobot playerRobot;
     private BasePart[] playerParts;
     private BasePart target;
+    [SerializeField]
+    protected GameManager gameManager;
 
-    
     public PartArm enemyWeapon;
     public PartHead enemyHead;
 
@@ -44,6 +45,10 @@ public class Enemy : MonoBehaviour
 
     public void DoAttack()
     {
+        if(torsoInstance.m_health <= 0)
+        {
+            //Application.LoadLevel("NevxMain");
+        }
         playerParts = new BasePart[5];
         playerParts[0] = player.headInstance;
         playerParts[1] = player.torsoInstance;
@@ -56,7 +61,14 @@ public class Enemy : MonoBehaviour
         target = playerParts[Random.Range(0, playerParts.Length)];
         target.m_health -= DamageCalculation.Calculate(enemyWeapon, enemyHead, target);
 
+        gameManager.textLog.text += "\n You took damage to " + target + ". You now have: " + target.m_health + " HP.";
+
         Debug.Log("You took damage to " + target + ". You now have: " + target.m_health);
+        if(player.torsoInstance.m_health <= 0)
+        {
+            Debug.Log("Your robot explodeded");
+            Application.Quit();
+        }
     }
 
 }

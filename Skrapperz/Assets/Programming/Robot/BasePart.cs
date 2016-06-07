@@ -18,7 +18,7 @@ public class BasePart : MonoBehaviour {
     [SerializeField]
     public int m_health;
 
-    [SerializeField]
-    private RectTransform healthbar;
+    //[SerializeField]
+    //private RectTransform healthbar;
     
 }

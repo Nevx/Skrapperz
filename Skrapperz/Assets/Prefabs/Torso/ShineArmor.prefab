@@ -40,9 +40,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee6b43176135c54aa3176afe12c46f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 40
-  Armor: 2
+  armor: 0
   power: 8
+  flavourText: 
+  m_maxHealth: 0
+  m_health: 60
+  healthbar: {fileID: 0}
+  torsoIcon: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -81,6 +81,8 @@ public class Player : MonoBehaviour
     {
         target.m_health -= DamageCalculation.Calculate(activeWeapon, activeHead, target);
         gameManager.AttackDone();
+        gameManager.textLog.text = "";
+        gameManager.textLog.text += "Enemy took:" + DamageCalculation.Calculate(activeWeapon, activeHead, target) + " damage to " + target + ". Enemy now have: " + target.m_health + " HP.";
         Debug.Log("Enemy took:" + DamageCalculation.Calculate(activeWeapon, activeHead, target) + " damage to " + target + ". Enemy now have: " + target.m_health);
     }
 

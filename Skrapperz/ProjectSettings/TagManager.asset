@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player_Skeleton
+  - Enemy_Skeleton
+  - TextLog
   layers:
   - Default
   - TransparentFX

@@ -40,12 +40,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589dc49735d680449aecbdaa828e3078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 50
-  Armor: 0
+  armor: 0
   power: 3
+  flavourText: 
+  m_maxHealth: 0
+  m_health: 40
+  healthbar: {fileID: 0}
   dodge: 35
   tackleAccuracy: 60
   tackleDamage: 8
+  legsIcon: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

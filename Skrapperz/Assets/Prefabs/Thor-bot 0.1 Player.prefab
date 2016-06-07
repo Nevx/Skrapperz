@@ -1,28 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &126978
+--- !u!1 &111758
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 434174}
-  - 114: {fileID: 11483230}
-  - 114: {fileID: 11463102}
+  - 4: {fileID: 424894}
+  - 114: {fileID: 11467476}
+  - 114: {fileID: 11439348}
   m_Layer: 0
-  m_Name: Thor-bot 0.1
-  m_TagString: Enemy
+  m_Name: Thor-bot 0.1 Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &434174
+--- !u!4 &424894
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126978}
+  m_GameObject: {fileID: 111758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.0208375, y: 0.38501638, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -30,31 +30,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11463102
+--- !u!114 &11439348
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126978}
+  m_GameObject: {fileID: 111758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5332c6da69ed1b144ac07d635d7019e4, type: 3}
+  m_Script: {fileID: 11500000, guid: db0e27d9bfe044443b6cbd6a18435403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyWeapon: {fileID: 0}
-  enemyHead: {fileID: 0}
-  robot: {fileID: 0}
+  robot: {fileID: 11467476}
+  gameManager: {fileID: 0}
   headInstance: {fileID: 0}
   torsoInstance: {fileID: 0}
   armRightInstance: {fileID: 0}
   armLeftInstance: {fileID: 0}
   legsInstance: {fileID: 0}
---- !u!114 &11483230
+  actionButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &11467476
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126978}
+  m_GameObject: {fileID: 111758}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e744445e899eea640b8aeb715f000834, type: 3}
@@ -74,5 +76,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 126978}
+  m_RootGameObject: {fileID: 111758}
   m_IsPrefabParent: 1

@@ -20,4 +20,31 @@ public class PartArm : BasePart {
     
     [SerializeField]
     private Sprite weaponIcon;
+
+    public RectTransform healthBar;
+
+    void Start()
+    {
+        if (GetComponentInParent<Enemy>())
+        {
+            healthBar = GameObject.Find("Enemy_skeleton").transform.FindChild("arm2_button").FindChild("Arm2Health").GetComponent<RectTransform>();
+        }
+        else
+        {
+            healthBar = GameObject.Find("Player_skeleton").transform.FindChild("arm2_button").FindChild("Arm2Health").GetComponent<RectTransform>();
+        }
+    }
+
+
+    void Update()
+    {
+        if (GetComponentInParent<Enemy>())
+        {
+            healthBar.sizeDelta = new Vector2(m_health * 1.1f, 40.0f);
+        }
+        else
+        {
+            healthBar.sizeDelta = new Vector2(m_health * 1.1f, 40.0f);
+        }
+    }
 }

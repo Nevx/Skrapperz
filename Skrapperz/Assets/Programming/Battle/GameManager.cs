@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Enemy enemy;
 
+    [SerializeField]
+    public UnityEngine.UI.Text textLog;
+
     void Update()
     {
         if (currentTurn == turn.player)

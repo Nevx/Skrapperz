@@ -40,14 +40,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59520f1a71df0ba4c9f29d0b75662e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 60
-  Armor: 1
+  armor: 0
   power: 2
+  flavourText: 
+  m_maxHealth: 0
+  m_health: 40
   damageType: 1
-  damage: 40
+  damage: 10
   accuracy: 5
   cooldown: 2
   crit: 40
+  weaponIcon: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
